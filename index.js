@@ -18,11 +18,8 @@ client.connect(err => {
   const productsCollection = client.db("emaJohn").collection("products");
   const ordersCollection = client.db("emaJohn").collection("orders");
   
-  app.get('/',(req,res)=>{
-   res.send("working nicely")
-       
-    })
-  })
+
+  
   app.post('/addProduct',(req,res)=>{
       const products = req.body;
    
